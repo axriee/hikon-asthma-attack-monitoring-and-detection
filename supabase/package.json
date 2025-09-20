@@ -1,0 +1,20 @@
+{
+  "name": "breathcare-supabase",
+  "version": "1.0.0",
+  "description": "Supabase backend for BreathCare health monitoring application",
+  "scripts": {
+    "migrate": "supabase db push",
+    "migrate:local": "supabase db reset",
+    "start:local": "supabase start",
+    "stop:local": "supabase stop",
+    "status": "supabase status",
+    "generate:types": "supabase gen types typescript --local > types/supabase.ts"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "supabase": "^1.123.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}
